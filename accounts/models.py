@@ -13,6 +13,7 @@ class UserAccountManager(BaseUserManager):
         user.save()
 
         return user
+        #1
 
 class UserAccount(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=255, unique=True)
